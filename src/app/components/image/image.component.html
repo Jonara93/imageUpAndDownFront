@@ -1,0 +1,13 @@
+<form>
+  <input type="file" (change)="onSelectFile($event)">
+  <br>
+  <br>
+  <button type="button" (click)="performUpload()">submit your image</button>
+</form>
+
+<br>
+<br>
+
+<div *ngIf="imageSrc">
+  <img src="{{imageSrc}}">
+</div>
